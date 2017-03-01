@@ -1,0 +1,79 @@
+#outer_panel_home
+{
+	width: 700px;
+	height: 422px;
+	margin-top: 40px;
+}
+
+#inner_panel_home
+{
+	width: 96%;
+	height: 94%;
+	margin: 2%;
+}
+
+#form_container_home
+{
+	width: 100%;
+	height: 395px;
+}
+
+#top_home
+{
+	float: left;
+	width: 96%;
+	height: 100%;
+	margin: 2%;
+}
+#top_left_home
+{
+	float: left;
+	width: 60%;
+	height: 100%;
+	margin-left: 20px;
+	text-align: left;
+}
+#top_right_home
+{
+	float: left;
+	width: 35%;
+	height: 100%;
+	text-align: left;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	background-image: url('../images/admission_schedule.png');
+	background-repeat: round;
+}
+
+
+#title_home
+{
+	height: 50px;
+	background-color: darkblue; 
+	color: #ef9900;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#body_home
+{
+	width: 100%;
+	height: 288px;
+}
+
+#bottom_home
+{
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	background-color: lightgrey;
+}
+
+.break_home
+{
+	width: 125px;
+	height: 15px;
+}
+
+

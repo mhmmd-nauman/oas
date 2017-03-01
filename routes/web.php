@@ -21,9 +21,11 @@ Route::get('/notify',function(){
             });
     
     Route::get('/', 'HomeController@index');
+    Route::get('/home', 'HomeController@index');
+    
     Route::get('/visitor-export-pdf', 'VisitorController@export_visitor_pdf');
 
-    Route::auth();
+
     // visitor routes
     Route::get('/visitor','VisitorController@getvisitor');
     Route::get('/visitor-export-excel','VisitorController@export_visitor');

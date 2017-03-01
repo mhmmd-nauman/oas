@@ -43,46 +43,30 @@
         .top_bar {
             background-color: #444D44;
         }
-        
     </style>
 </head>
 <body>
-    <div class="container" >
-        <div class="row">						
-            <div  class="col-md-12 " >
-                <img src="{{url('/')}}/images/iub_name_logo.png"  class="center-block"/>
-            </div>
-        </div>
-        <div class="row">	
-            <div class="col-md-12">
-                <img src="{{url('/')}}/images/iub_sub_title_oa.png" class="center-block" />					
-            </div>						
-        </div>
-        <div class="row">
-            <br>
-        </div>
+    
+    <div class="container" ><div class="row">						
+					<div >
+                                            <img src="images/iub_name_logo.png" width="50%" />
+					</div>
+					<div >
+					<img src="images/iub_sub_title_oa.png" width="20%" />					
+					</div>						
+				</div>
+
             <div class="row">
                 <div class="col-md-12 top_bar" >
                     
                     <nav class = "navbar navbar-default col-md-9" role = "navigation">
-                    @if (Auth::guest())
-                    
-                    <ul class = "nav navbar-nav ">
-                            <li ><a href = "{{url('/')}}" style="color:white;">Home</a></li>
-                            <li ><a href = "#" style="color:white;">Regulations</a></li>
-                            <li><a href="#" style="color:white;">Instructions</a></li>
-                            <li><a href="#" style="color:white;">FAQs</a></li>
-                            <li><a href="#" style="color:white;"">Contact</a></li>
-                            <li><a href="#" style="color:white;">About</a></li>
-                    </ul>
-                    
-                    @else
+   
                     <div class = "navbar-header">
                        <a class = "navbar-brand" href = "{{url('/')}}" style="color:white;">{!! env('PROJECT_NAME') !!}-{!! env('APP_NAME') !!}</a>
                     </div>
 
                     <div>
-                       <ul class = "nav navbar-nav ">
+                       <ul class = "nav navbar-nav pull-right">
                            
                            <li class = "dropdown">
                              <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" style="color:white;">
@@ -100,7 +84,7 @@
                           </li>
                           <li class = "dropdown">
                              <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" style="color:white;">
-                                Admission Office 
+                                Front Office 
                                 <b class = "caret"></b>
                              </a>
                             <ul class="dropdown-menu">
@@ -145,24 +129,28 @@
 
                        </ul>
                     </div>
-                     @endif
+
                  </nav>
                      
                 
-                    <ul class = "nav  navbar-nav pull-right" >
+                    <ul class = "nav  navbar-default pull-right" role = "navigation">
                         @if (Auth::guest())
-                        
-                             
-                        <li><a href="{{ url('/login') }}" style=" color: white;"> Login</a></li>
-                                
-                                
-                                
-                                <li><a href="{{ url('/register') }}" style=" color: white;" > Register</a></li>
-                            
+                        <li class = "dropdown">
+                             <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" style="color:white;">
+                                My Account
+                                <b class = "caret"></b>
+                             </a>
 
-                         
+                             <ul class = "dropdown-menu">
+                                <li><a href="{{ url('/login') }}"> Login</a></li>
+                                
+                                <li class = "divider"></li>
+                                
+                                <li><a href="{{ url('/register') }}" > Register</a></li>
+                             </ul>
+
+                          </li>
                           @else
-                          
                           <li class = "dropdown">
                               <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" style="color:white;">
                                 {{ Auth::user()->name }}
@@ -173,17 +161,7 @@
                                 <li><a href = "#">My Profile</a></li>
                                 
                                 <li class = "divider"></li>
-                                <li>
-                                    <a href="{{ route('logout') }}"
-                                        onclick="event.preventDefault();
-                                                 document.getElementById('logout-form').submit();">
-                                        Logout
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                        {{ csrf_field() }}
-                                    </form>
-                                </li>
+                                <li><a href="{{ url('/logout') }}" >Logout</a></li>
                              </ul>
 
                           </li>
