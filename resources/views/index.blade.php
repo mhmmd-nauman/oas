@@ -2,6 +2,7 @@
 
 @section('content')
 <link rel="stylesheet" href="{{ asset('css/iuboa_home.css') }}" >
+<link rel="stylesheet" href="{{ asset('css/iuboa_personal_info.css') }}" >
 <div class="container">
     @if (Auth::guest())
     <div class="row">
@@ -39,105 +40,201 @@
         
        
     <div class="row">
-        
-        <div class = "panel-group" id = "accordion">
-            <div class = "panel panel-default col-md-3">
+        <div id="title_personal_info">
+                Overview of your Information
+        </div>
+        <br>
+        <div class = "panel panel-default">
+            <div class = "panel-heading">
+               <h3 class = "panel-title">
+                  Personal Information
+               </h3>
+            </div>
 
-               <div class = "panel-heading">
-                  <h4 class = "panel-title">
-                     <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapseOne">
-                        <span class="glyphicon glyphicon-search" aria-hidden=true></span>System Settings 
-                     </a>
-                  </h4>
-               </div>
-
-               <div id = "collapseOne" class = "panel-collapse collapse in">
-                  <div class = "panel-body">
-                        <div class="row">
-                              <a href="{{url('/department')}}">
-                              <button type=button class="btn btn-default col-md-6">
-                                  <span class="glyphicon glyphicon-user" aria-hidden=true></span>Department
-                              </button> 
-                              </a>
-                                <a href="{{url('/program')}}">
-                              <button type=button class="btn btn-default col-md-6">
-                                  <span class="glyphicon glyphicon-user" aria-hidden=true></span>Programs
-                              </button> 
-                              </a>
-                        </div>
-                        <br>
-                        <div class="row">
+            <div class = "panel-body">
+                <table class="table table-borderless table-hover">
+                    <tr>
+                        <td class="col-md-2">
+                            CNIC#
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                        <td class="col-md-2">
+                            Name
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Father's Name
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                        <td>
+                            Phone
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            E-Mail
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                        <td>
+                            Gender
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            District
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                        <td>
+                            Nationality
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Current Mailing Address
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                        <td>
+                            Permanent Address
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Hafiz-e-Quran
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                        <td>
+                            Blood Group
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Religion
+                        </td>
+                        <td>
+                            tt
+                        </td>
+                        <td>
                             
-                            <button type=button class="btn btn-default col-md-6">
-                                <span class="glyphicon glyphicon-user" aria-hidden=true></span>Users
-                            </button> 
-                            </a>
-                        </div>
-                      
-                  </div>
-               </div>
-
-            </div>
-
-            <div class = "panel panel-default col-md-3 col-md-offset-1">
-               <div class = "panel-heading">
-                  <h4 class = "panel-title">
-                     <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapseTwo">
-                        <span class="glyphicon glyphicon-search" aria-hidden=true></span>Admission Office 
-                     </a>
-                  </h4>
-               </div>
-               <div id = "collapseTwo" class = "panel-collapse collapse">
-                  <div class = "panel-body">
-                        <div class="row">
-                              <a href="{{url('/visitor')}}">
-                              <button type=button class="btn btn-default col-md-6">
-                                  <span class="glyphicon glyphicon-user" aria-hidden=true></span>Visitors
-                              </button> 
-                              </a>
-                                <a href="{{url('/student')}}">
-                              <button type=button class="btn btn-default col-md-6">
-                                  <span class="glyphicon glyphicon-user" aria-hidden=true></span>Admissions
-                              </button> 
-                              </a>
-                        </div>
-                        
-                      
-                  </div>
-               </div>
-
-            </div>
-
-            <div class = "panel panel-default col-md-3 col-md-offset-1">
-                <div class = "panel-heading">
-                  <h4 class = "panel-title">
-                     <a data-toggle = "collapse" data-parent = "#accordion" href = "#collapseThree">
-                        <span class="glyphicon glyphicon-search" aria-hidden=true></span>Academics 
-                     </a>
-                  </h4>
-               </div>
-               <div id = "collapseThree" class = "panel-collapse collapse">
-                  <div class = "panel-body">
-                        <div class="row">
-                              <a href="{{url('/#')}}">
-                              <button type=button class="btn btn-default col-md-6">
-                                  <span class="glyphicon glyphicon-user" aria-hidden=true></span>Attendances
-                              </button> 
-                              </a>
-                                <a href="{{url('/#')}}">
-                              <button type=button class="btn btn-default col-md-6">
-                                  <span class="glyphicon glyphicon-user" aria-hidden=true></span>Course Selection
-                              </button> 
-                              </a>
-                        </div>
-                        
-                      
-                  </div>
-               </div>
-
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
             </div>
          </div>
-        </div>
+        <div class = "panel panel-default">
+            <div class = "panel-heading">
+               <h3 class = "panel-title">
+                  Guardian Information
+               </h3>
+            </div>
+
+            <div class = "panel-body">
+                  <table class="table table-borderless table-hover">
+                    <tr>
+                        <td class="col-md-2">
+                            Name
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td class="col-md-2">
+                            Relationship
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td class="col-md-2">
+                            CNIC#
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-2">
+                            Phone
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td class="col-md-2">
+                            Monthly Income
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td class="col-md-2">
+                            Profession
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-2">
+                            Address
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td class="col-md-2">
+                            City
+                        </td>
+                        <td colspan="3">
+                            
+                        </td>
+                        
+                        
+                    </tr>
+                    
+                </table>
+            </div>
+         </div>
+        <div class = "panel panel-default">
+            <div class = "panel-heading">
+               <h3 class = "panel-title">
+                  Educational Information
+            </div>
+
+            <div class = "panel-body">
+               Panel content
+            </div>
+         </div>
+        
+    </div>
       
        @endif
     <div class="row">

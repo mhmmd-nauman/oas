@@ -1,0 +1,122 @@
+#outer_panel_personal_info
+{
+	width: 90%;
+	height: 700px;
+	margin-top: 40px;
+}
+
+#inner_panel_personal_info
+{
+	width: 96%;
+	height: 94%;
+	margin: 2%;
+}
+
+#form_container_personal_info
+{
+	width: 100%;
+	height: 580px;
+}
+
+#top_personal_info
+{
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	height:88%;
+}
+
+#title_personal_info
+{
+	min-height: 50px;
+	background-color: darkblue; 
+	color: #ef9900;
+	text-align: center;
+	padding: 10px 0 10px 0px;
+       
+}
+
+#body_personal_info
+{
+	width: 100%;
+	height: 600px;
+}
+
+#bottom_personal_info
+{
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin-top: 20px;
+	background-color: lightgrey;
+}
+
+#message_personal_info
+{
+	height: 20px;
+	color: red;
+	width: 100%;
+	float: left;
+}
+
+#footer_personal_info
+{
+	font-size:10px;
+	text-align: center;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.break_personal_info
+{
+	width: 125px;
+	height: 15px;
+}
+
+#left
+{
+    width: 48%;
+    float: left;
+	height: 500px;
+	margin-left: 2%;
+	border: 1px solid lightgray;
+}
+
+.left_style
+{
+    width: 100%;
+    padding: 10px 0px;
+	float: left;
+	text-align: left;
+	border-bottom: 1px solid lightgray;
+}
+
+#right{
+    width : 48%;
+    float : left;
+	height: 500px;
+	text-align: left;
+	border: 1px solid lightgray;
+}
+
+#help_display
+{
+	float: left;
+	height: 40%;
+	width: 100%;
+	border-bottom: 1px solid lightgray;
+	text-align: left;
+}
+
+#help_display_inner
+{
+	width: 90%;
+	margin-left: 5%;
+	text-align: left;
+}
+
+#guardian{
+    width: 95%;
+}
+
+

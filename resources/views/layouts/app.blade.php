@@ -77,75 +77,18 @@
                     </ul>
                     
                     @else
-                    <div class = "navbar-header">
-                       <a class = "navbar-brand" href = "{{url('/')}}" style="color:white;">{!! env('PROJECT_NAME') !!}-{!! env('APP_NAME') !!}</a>
-                    </div>
-
-                    <div>
-                       <ul class = "nav navbar-nav ">
-                           
-                           <li class = "dropdown">
-                             <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" style="color:white;">
-                                System Settings 
-                                <b class = "caret"></b>
-                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{url('/department')}}">Department</a></li>
-                                <li><a href="{{url('/program')}}">Programs</a></li>
-                                
-                                <li><a href="{{url('/course')}}">Courses</a></li>
-                                <li role = "presentation" class = "divider"></li>
-                                <li><a href="#{{url('/personal-settings')}}">Personal Settings</a></li>
-                            </ul>
-                          </li>
-                          <li class = "dropdown">
-                             <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" style="color:white;">
-                                Admission Office 
-                                <b class = "caret"></b>
-                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{{url('/visitor')}}">Visitors</a></li>
-                                <li><a href="{{url('/student')}}">Admissions</a></li>
-                                <!--
-                                <li><a href="#{{url('/admission')}}">Admissions</a></li>
-                                -->
-                            </ul>
-                           </li>
-                          <li class = "dropdown">
-                             <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" style="color:white;">
-                                Academics 
-                                <b class = "caret"></b>
-                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Attendances</a></li>
-                                <li><a href="#">Course Selection</a></li>
-                            </ul>
-                           </li>
-                           <li class = "dropdown">
-                             <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" style="color:white;">
-                                Accounts 
-                                <b class = "caret"></b>
-                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Option 1</a></li>
-                                <li><a href="#">Option 2</a></li>
-                            </ul>
-                           </li>
-                           <li class = "dropdown">
-                             <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown" style="color:white;">
-                                Reports 
-                                <b class = "caret"></b>
-                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Report 1</a></li>
-                                <li><a href="#">Report 2</a></li>
-                            </ul>
-                           </li>
+                   <ul class = "nav navbar-nav ">
+                           <li ><a href = "{{url('/')}}" style="color:white;">Overview</a></li>
+                            <li ><a href = "#" style="color:white;">Personal Info</a></li>
+                            <li><a href="#" style="color:white;">Educational Info</a></li>
+                            <li><a href="#" style="color:white;">Miscellaneous Info</a></li>
+                            <li><a href="#" style="color:white;"">Choose Programmes</a></li>
+                            <li><a href="#" style="color:white;">My Applications</a></li>
                           
 
-                       </ul>
-                    </div>
-                     @endif
+                    </ul>
+                   
+                    @endif
                  </nav>
                      
                 
