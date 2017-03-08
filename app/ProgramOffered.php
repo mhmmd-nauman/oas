@@ -21,4 +21,8 @@ class ProgramOffered extends Model
         return $this->belongsTo('App\Student');
     }
     
+    public function applicant() {
+        return $this->belongsTo('App\Applicant');
+    }
+    
 }

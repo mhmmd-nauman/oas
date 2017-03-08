@@ -22,6 +22,9 @@ Route::get('/notify',function(){
     
     Route::get('/', 'HomeController@index');
     Route::get('/home', 'HomeController@index');
+    Route::get('/personal-info', 'ApplicantController@view_applicant_personal_info');
+    Route::get('/education-info', 'ApplicantController@view_applicant_education_info');
+    //
     
     Route::get('/visitor-export-pdf', 'VisitorController@export_visitor_pdf');
 

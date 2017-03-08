@@ -22,7 +22,8 @@
     <script src="{{ asset('js/DataTables-1.10.13/media/js/jquery.dataTables.js') }}" ></script>
     <script type="text/javascript" language="javascript" src="{{ asset('js/DataTables-1.10.13/examples/resources/syntax/shCore.js') }}"></script>
     <script type="text/javascript" language="javascript" src="{{ asset('js/DataTables-1.10.13/examples/resources/demo.js') }}"></script>
-    
+    <link rel="stylesheet" href="{{ asset('css/iuboa_home.css') }}" >
+    <link rel="stylesheet" href="{{ asset('css/iuboa_personal_info.css') }}" >
     <script src="{{ asset('bootstrap/dist/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('js/jquery-ui-1.12.1/jquery-ui.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('js/jquery-ui-1.12.1/jquery-ui.css') }}">
@@ -79,8 +80,8 @@
                     @else
                    <ul class = "nav navbar-nav ">
                            <li ><a href = "{{url('/')}}" style="color:white;">Overview</a></li>
-                            <li ><a href = "#" style="color:white;">Personal Info</a></li>
-                            <li><a href="#" style="color:white;">Educational Info</a></li>
+                            <li ><a href = "{{url('/personal-info')}}" style="color:white;">Personal Info</a></li>
+                            <li><a href="{{url('/education-info')}}"  style="color:white;">Educational Info</a></li>
                             <li><a href="#" style="color:white;">Miscellaneous Info</a></li>
                             <li><a href="#" style="color:white;"">Choose Programmes</a></li>
                             <li><a href="#" style="color:white;">My Applications</a></li>

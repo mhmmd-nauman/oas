@@ -28,10 +28,18 @@ class ApplicantController extends Controller
     public function index(){
         
     }
+    public function view_applicant_personal_info(Request $request){
+        return view('applicants.view_applicant_info');
+    }
     
     public function save_applicant_personal_info(Request $request){
         
     }
+    
+    public function view_applicant_education_info(Request $request){
+        return view('applicants.view_applicant_education_info');
+    }
+    
     public function save_applicant_educational_info(Request $request){
         
     }

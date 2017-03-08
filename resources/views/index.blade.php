@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<link rel="stylesheet" href="{{ asset('css/iuboa_home.css') }}" >
-<link rel="stylesheet" href="{{ asset('css/iuboa_personal_info.css') }}" >
+
 <div class="container">
     @if (Auth::guest())
     <div class="row">
