@@ -154,6 +154,274 @@ $('#confirmDelete').on('show.bs.modal', function (e) {
                        </div>
                 </div>
              </div>
+            <div class = "panel panel-default">
+                <div class = "panel-heading">
+                   <h3 class = "panel-title">
+                      Intermediate
+                   </h3>
+                </div>
+
+                <div class = "panel-body">
+                   <div class="row">
+                    <div class="col-md-12">
+                    
+                            <div class = "form-group">
+                                <label for = "firstname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Year Passed:')}}
+                                </label>
+                                <div class = "col-md-4">
+                                    {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Year Passed'))}}
+                                </div>
+                                <label for = "lastname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Exam:')}}
+                                </label>
+
+                                <div class = "col-md-4">
+                                    <select id="hsc_exam" class="form-control">
+                                        <option>FA/FSc/HSSC</option>
+                                        <option>ICS</option>
+                                        <option>ICOM</option>
+                                        <option>A Level</option>
+                                        <option>DAE</option>
+                                        <option>Equivalent (e.g., Shahadat-ul-Khasa)</option>
+                                    </select>
+                                       
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                   <div class="row">
+                    <div class="col-md-12">
+                    
+                            <div class = "form-group">
+                                <label for = "firstname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Obtained Marks:')}}
+                                </label>
+                                <div class = "col-md-4">
+                                    {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Obtained Marks'))}}
+                                </div>
+                                <label for = "lastname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Roll No:')}}
+                                </label>
+
+                                <div class = "col-md-4">
+                                    {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Roll No'))}}
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                   <div class="row">
+                    <div class="col-md-12">
+                    
+                            <div class = "form-group">
+                                <label for = "firstname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Group/Subjects:')}}
+                                </label>
+                                <div class = "col-md-4">
+                                    <select id="hsc_subject_group" class="form-control">
+                                        <option>Pre-Medical</option>
+                                        <option>Pre-Engineering</option>
+                                        <option>Humanities</option>
+                                    </select>
+                                </div>
+                                <label for = "lastname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Total Marks:')}}
+                                </label>
+
+                                <div class = "col-md-4">
+                                    {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Total Marks'))}}
+                                       
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                </div>
+             </div>
+            <div class = "panel panel-default">
+                <div class = "panel-heading">
+                   <h3 class = "panel-title">
+                      Graduation
+                   </h3>
+                </div>
+
+                <div class = "panel-body">
+                   <div class="row">
+                    <div class="col-md-12">
+                    
+                            <div class = "form-group">
+                                <label for = "firstname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Year Passed:')}}
+                                </label>
+                                <div class = "col-md-4">
+                                    {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Year Passed'))}}
+                                </div>
+                                <label for = "lastname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Exam:')}}
+                                </label>
+
+                                <div class = "col-md-4">
+                                    <select id="grad_exam" class="form-control">
+                                            <option value="BA">BA</option>
+                                            <option value="BSc">BSc</option>
+                                            <option value="BCom">BCom</option>
+                                    </select>
+                                    
+                                       
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                   <div class="row">
+                    <div class="col-md-12">
+                    
+                            <div class = "form-group">
+                                <label for = "firstname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Obtained Marks:')}}
+                                </label>
+                                <div class = "col-md-4">
+                                    {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Obtained Marks'))}}
+                                </div>
+                                <label for = "lastname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Roll No:')}}
+                                </label>
+
+                                <div class = "col-md-4">
+                                    {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Roll No'))}}
+                                </div>
+                            </div>
+                           </div>
+                       </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                    
+                            <div class = "form-group">
+                                
+                                
+                                <label for = "lastname" class = "col-md-2 control-label">
+                                    {{ Form::label('title','Total Marks:')}}
+                                </label>
+
+                                <div class = "col-md-4">
+                                    {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Total Marks'))}}
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6" style=" text-align: center;">
+                            {{ Form::label('title','Marks')}}
+                        </div>
+                        <div class="col-md-6" style=" text-align: center;">    
+                            {{ Form::label('title','Marks')}}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 center" >
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::label('title','Compulsory')}}
+                            </div>
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::label('title','Obtained')}}
+                            </div>
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::label('title','Total')}}
+                            </div>
+                        </div>
+                        <div class="col-md-6" style=" text-align: center;">    
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::label('title','Optional')}}
+                            </div>
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::label('title','Obtained')}}
+                            </div>
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::label('title','Total')}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 center" >
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::label('title','English')}}
+                            </div>
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Obtained'))}}
+                            </div>
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::text('contact',null,array('id'=>'contact','class' => 'form-control input-sm','placeholder'=>'Total'))}}
+                            </div>
+                        </div>
+                        <div class="col-md-6" style=" text-align: center;">    
+                            <div class="col-md-4" style=" text-align: center;">
+                            <select id="grad_opt_1_name"  class=" form-control" >
+                                <option value="">-- Select a subject--</option>
+                                <option value="Arabic">Arabic</option>
+                                <option value="Arabic(elective)">Arabic(elective)</option>
+                                <option value="Arabic(optional)">Arabic(optional)</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Botany">Botany</option>
+                                <option value="B-Tech">B-Tech</option>
+                                <option value="Cartography">Cartography</option>
+		&nbsp;&nbsp;  <option value="Chemistry">Chemistry</option>
+		&nbsp;&nbsp;  <option value="Civics">Civics</option>
+		&nbsp;&nbsp;  <option value="Civil">Civil</option>
+		&nbsp;&nbsp;  <option value="Commerce">Commerce</option>
+		&nbsp;&nbsp;  <option value="Computer Science">Computer Science</option>
+		&nbsp;&nbsp;  <option value="Demography">Demography</option>
+		&nbsp;&nbsp;  <option value="Economics">Economics</option>
+		&nbsp;&nbsp;  <option value="Education">Education</option>
+		&nbsp;&nbsp;  <option value="English">English</option>
+		&nbsp;&nbsp;  <option value="English Compulsory">English Compulsory</option>
+		&nbsp;&nbsp;  <option value="English Literature">English Literature</option>
+		&nbsp;&nbsp;  <option value="Environmental Sciences/Population Studies">Environmental Sciences/Population Studies</option>
+		&nbsp;&nbsp;  <option value="Fazil-e-Arabic">Fazil-e-Arabic</option>
+		&nbsp;&nbsp;  <option value="Fine Arts(elective)">Fine Arts(elective)</option>
+		&nbsp;&nbsp;  <option value="Fine Arts/Graphic Design and Textile Design(elective)">Fine Arts/Graphic Design and Textile Design(elective)</option>
+		&nbsp;&nbsp;  <option value="Gender Studies(elective)">Gender Studies(elective)</option>
+		&nbsp;&nbsp;  <option value="Geography">Geography</option>
+		&nbsp;&nbsp;  <option value="GIS">GIS</option>
+		&nbsp;&nbsp;  <option value="History">History</option>
+		&nbsp;&nbsp;  <option value="International Relations">International Relations</option>
+		&nbsp;&nbsp;  <option value="Islamic Studies">Islamic Studies</option>
+		&nbsp;&nbsp;  <option value="Journalism">Journalism</option>
+		&nbsp;&nbsp;  <option value="Library Science (as elective or optional)">Library Science (as elective or optional)</option>
+		&nbsp;&nbsp;  <option value="Mass Communication (as elective or optional)">Mass Communication (as elective or optional)</option>
+		&nbsp;&nbsp;  <option value="Mathematics">Mathematics</option>
+		&nbsp;&nbsp;  <option value="Media Studies">Media Studies</option>
+		&nbsp;&nbsp;  <option value="Pakistan Studies">Pakistan Studies</option>
+		&nbsp;&nbsp;  <option value="Persian">Persian</option>
+		&nbsp;&nbsp;  <option value="Persian(elective)">Persian(elective)</option>
+		&nbsp;&nbsp;  <option value="Persian(optional)">Persian(optional)</option>
+		&nbsp;&nbsp;  <option value="Philosophy">Philosophy</option>
+		&nbsp;&nbsp;  <option value="Physical Education">Physical Education</option>
+		&nbsp;&nbsp;  <option value="Physics">Physics</option>
+		&nbsp;&nbsp;  <option value="Political Science">Political Science</option>
+		&nbsp;&nbsp;  <option value="Political Science(elective)">Political Science(elective)</option>
+		&nbsp;&nbsp;  <option value="Psychology">Psychology</option>
+		&nbsp;&nbsp;  <option value="Psychology(elective 200 Marks)">Psychology(elective 200 Marks)</option>
+		&nbsp;&nbsp;  <option value="Punjabi(elective)">Punjabi(elective)</option>
+		&nbsp;&nbsp;  <option value="Shahadat-ul-Alia">Shahadat-ul-Alia</option>
+		&nbsp;&nbsp; <option value="Siraiki(elective)">Siraiki(elective)</option>
+		&nbsp;&nbsp;  <option value="Siraiki(optional)">Siraiki(optional)</option>
+		&nbsp;&nbsp;  <option value="Sociology">Sociology</option>
+		&nbsp;&nbsp;  <option value="Statistics">Statistics</option>
+		&nbsp;&nbsp;  <option value="Urdu">Urdu</option>
+		&nbsp;&nbsp;  <option value="Urdu(elective)">Urdu(elective)</option>
+		&nbsp;&nbsp;  <option value="Urdu(optional)">Urdu(optional)</option>
+		&nbsp; &nbsp; <option value="Zoology">Zoology</option>
+			</select>
+                            </div>
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::label('title','Obtained')}}1
+                            </div>
+                            <div class="col-md-4" style=" text-align: center;">
+                                {{ Form::label('title','Total')}}1
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
             
                             <div class="row">
                           <table class="table"  >

@@ -126,15 +126,10 @@ $('#confirmDelete').on('show.bs.modal', function (e) {
                                     </label>
 
                                    <div class = "col-md-7">
-                                       <div class = "radio">
-                                            <label>
-                                               <input type = "radio" name = "gender" id = "gender" value = "Male" checked> Yes
-                                            </label>
-                                            <label>
-                                               <input type = "radio" name = "gender" id = "gender" value = "Female">
-                                               No
-                                            </label>
-                                        </div>
+                                       <select name="hafiz_e_quran" value="No" onfocus="helpDisplay(1)">
+					<option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                       </select>
                                    </div>
                                 </div>
                               </td>
